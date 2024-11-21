@@ -1,8 +1,8 @@
 import React from 'react';
 
-type Props = {};
 
-export default function Divider({}: Props) {
+
+export default function Divider() {
 	return (
 		<svg
 			className='align-top h-fit'

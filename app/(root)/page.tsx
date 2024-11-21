@@ -1,7 +1,6 @@
 import Divider from '@/components/Divider';
 import { Button } from '@/components/ui/button';
 import { LINKS } from '@/lib/links';
-import { ArrowDown, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -10,16 +9,23 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
+import markdownit from 'markdown-it';
+import { HOW_TO_BUY } from '@/lib/faq';
+import { randomUUID } from 'crypto';
+import { Star } from 'lucide-react';
+const md = markdownit();
 
 export default function Home() {
 	return (
 		<main className='font-normal'>
 			{/* hero section */}
-			<section className='w-full max-h-fit my-24 '>
+			<section
+				id='hero'
+				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex gap-y-8'>
-					<div className='flex items-start w-full'>
+					<div className='flex items-start justify-center w-full'>
 						<Image
-							className='w-full'
+							className='w-[500px] max-w-full'
 							src={'/drink_smoke.png'}
 							alt='hero-image'
 							width={250}
@@ -45,7 +51,7 @@ export default function Home() {
 							</Link>
 							<Link href={LINKS.x}>
 								<Image
-									src={'/x.svg'}
+									src={'/telegram.svg'}
 									alt='x link'
 									width={50}
 									height={50}
@@ -53,7 +59,7 @@ export default function Home() {
 							</Link>
 							<Link href={LINKS.x}>
 								<Image
-									src={'/x.svg'}
+									src={'/uniswap.svg'}
 									alt='x link'
 									width={50}
 									height={50}
@@ -61,7 +67,7 @@ export default function Home() {
 							</Link>
 							<Link href={LINKS.x}>
 								<Image
-									src={'/x.svg'}
+									src={'/cmc.svg'}
 									alt='x link'
 									width={50}
 									height={50}
@@ -69,7 +75,7 @@ export default function Home() {
 							</Link>
 							<Link href={LINKS.x}>
 								<Image
-									src={'/x.svg'}
+									src={'/cc.svg'}
 									alt='x link'
 									width={50}
 									height={50}
@@ -77,7 +83,7 @@ export default function Home() {
 							</Link>
 							<Link href={LINKS.x}>
 								<Image
-									src={'/x.svg'}
+									src={'/dextools.svg'}
 									alt='x link'
 									width={50}
 									height={50}
@@ -163,11 +169,13 @@ export default function Home() {
 				</span>
 			</section>
 			{/* about section  */}
-			<section className='w-full max-h-fit my-24 '>
+			<section
+				id='about'
+				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex gap-y-8'>
-					<div className='flex items-start w-full'>
+					<div className='flex items-start justify-center '>
 						<Image
-							className='w-full'
+							className='w-[500px] max-w-full'
 							src={'/wizard.png'}
 							alt='hero-image'
 							width={350}
@@ -178,7 +186,7 @@ export default function Home() {
 						<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 							About
 						</h3>
-						<p className='text-2xl'>
+						<p className='text-2xl max-w-[60ch]'>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Ipsa, necessitatibus repellat voluptatibus iste
 							architecto tempore facilis amet atque provident veniam
@@ -195,11 +203,13 @@ export default function Home() {
 				</span>
 			</section>
 			{/* tokenomics sectin */}
-			<section className='w-full max-h-fit my-24 '>
+			<section
+				id='tokenomics'
+				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex gap-y-8'>
 					<div className='flex items-start w-full'>
 						<Image
-							className='w-full'
+							className='w-[500px] max-w-full'
 							src={'/drink_smoke.png'}
 							alt='hero-image'
 							width={350}
@@ -207,11 +217,11 @@ export default function Home() {
 						/>
 					</div>
 					<div className='flex flex-col items-center justify-center w-full max-lg:-order-1 text-center gap-8'>
-						<div className='flex flex-col w-full bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
+						<div className='flex flex-col w-fit bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
 							<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 								Tokenomics
 							</h3>
-							<p className='text-2xl'>
+							<p className='text-xl max-w-[60ch]'>
 								Lorem ipsum dolor sit amet consectetur, adipisicing
 								elit. Ipsa, necessitatibus repellat voluptatibus iste
 								architecto tempore facilis amet atque provident veniam
@@ -229,7 +239,9 @@ export default function Home() {
 				</span>
 			</section>
 			{/* roadmap section */}
-			<section className='w-full max-h-fit my-24 '>
+			<section
+				id='roadmap'
+				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col items-center flex gap-8'>
 					<div className='flex basis-[25%] items-start w-[200px] order-2'>
 						<Image
@@ -244,8 +256,8 @@ export default function Home() {
 						<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 							Roadmap
 						</h3>
-						<div className='flex flex-col w-full flex-grow basis-[50%] bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
-							<p className='text-2xl'>
+						<div className='flex flex-col w-fit flex-grow basis-[50%] bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl mb-6'>
+							<p className='text-xl max-w-[60ch]'>
 								Lorem ipsum dolor sit amet consectetur, adipisicing
 								elit. Ipsa, necessitatibus repellat voluptatibus iste
 								architecto tempore facilis amet atque provident veniam
@@ -259,7 +271,7 @@ export default function Home() {
 					</div>
 					<div className='flex basis-[25%] items-start w-[200px]'>
 						<Image
-							className='w-full order-2'
+							className='w-[500px] max-w-full order-2'
 							src={'/drink_smoke.png'}
 							alt='hero-image'
 							width={350}
@@ -272,24 +284,62 @@ export default function Home() {
 				</span>
 			</section>
 			{/* how to buy section */}
-			<section className='w-full max-h-fit my-24 '>
+			<section
+				id='how-to-buy'
+				className='w-full max-h-fit my-24 '>
 				<div className='flex flex-col gap-y-8 items-center justify-center'>
 					<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 						How To Buy
 					</h3>
 					<Accordion
-						className='p-2 rounded-xl bg-secondary/70 max-lg:w-full w-[75%]'
+						className=' p-3 rounded-xl bg-primary/70 max-lg:w-full w-[75%] '
 						type='single'
 						collapsible>
-						<AccordionItem value='item-1'>
-							<AccordionTrigger className='flex items-center justify-between'>
-								Is it accessible?
-							</AccordionTrigger>
-							<AccordionContent className='border-t'>
-								Yes. It adheres to the WAI-ARIA design pattern.
-							</AccordionContent>
-						</AccordionItem>
+						{HOW_TO_BUY.map((tip, i) => (
+							<AccordionItem
+								key={randomUUID()}
+								className={`${i !== 0 && 'border-t'} `}
+								value={`item-${i + 1}`}>
+								<AccordionTrigger className='flex items-center justify-between text-xl'>
+									{i + 1}. {tip.Q}
+								</AccordionTrigger>
+								<AccordionContent className=' shadow-lg border-t border-dotted text-lg py-2 px-4'>
+									<article
+										style={{ wordBreak: 'break-word' }}
+										className='prose'
+										dangerouslySetInnerHTML={{
+											__html: md.render(tip.A),
+										}}
+									/>
+								</AccordionContent>
+							</AccordionItem>
+						))}
 					</Accordion>
+					<div className='flex items-start w-[300]'>
+						<Image
+							className='w-[500px] max-w-full'
+							src={'/bull.svg'}
+							alt='hero-image'
+							width={350}
+							height={350}
+						/>
+					</div>
+					<iframe
+						src='https://app.uniswap.org/#/swap?outputCurrency=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+						height='660px'
+						className='rounded-xl max-lg:w-full w-3/4'
+					/>
+					<Button
+						asChild
+						variant={'outline'}
+						className='mb-6 text-lg py-6 px-8 rounded-xl'>
+						<Link
+							href={
+								'https://app.uniswap.org/#/swap?outputCurrency=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+							}>
+							Go to Uniswap
+						</Link>
+					</Button>
 				</div>
 				<span className='absolute w-full left-0'>
 					<Divider />

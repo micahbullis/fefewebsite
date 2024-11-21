@@ -14,11 +14,12 @@ import { Button } from './ui/button';
 import { CrossIcon, Menu } from 'lucide-react';
 import { LINKS } from '@/lib/links';
 import Link from 'next/link';
-type Props = {};
 
-export default function Navbar({}: Props) {
+export default function Navbar() {
 	return (
-		<nav className=''>
+		<nav
+			id='nav'
+			className=''>
 			<ul className='hidden md:flex items-center gap-4 text-lg'>
 				<li>
 					<Link href={LINKS.home.href}>{LINKS.home.title}</Link>
@@ -40,7 +41,11 @@ export default function Navbar({}: Props) {
 					</Link>
 				</li>
 				<li>
-					<Link href={LINKS.chart.href}>{LINKS.chart.title}</Link>
+					<Link
+						target='_blank'
+						href={LINKS.chart.href}>
+						{LINKS.chart.title}
+					</Link>
 				</li>
 				<li className='ml-auto'>
 					<Button
