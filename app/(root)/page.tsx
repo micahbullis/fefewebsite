@@ -318,14 +318,14 @@ export default function Home() {
 					<div className='flex items-start w-[300px]'>
 						<Image
 							className='w-[500px] max-w-full'
-							src={'/bull.svg'}
+							src={'/bull.png'}
 							alt='bull image'
 							width={350}
 							height={350}
 						/>
 					</div>
 					<iframe
-						src='https://app.uniswap.org/#/swap?outputCurrency=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+						src='https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum'
 						height='660px'
 						className='rounded-xl max-lg:w-full w-3/4'
 					/>
@@ -335,7 +335,7 @@ export default function Home() {
 						className='mb-6 text-lg py-6 px-8 rounded-xl'>
 						<Link
 							href={
-								'https://app.uniswap.org/#/swap?outputCurrency=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+								'https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum'
 							}>
 							Go to Uniswap
 						</Link>

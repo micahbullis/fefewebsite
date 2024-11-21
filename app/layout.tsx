@@ -41,7 +41,7 @@ export default function RootLayout({
 			lang='en'
 			className='scroll-smooth focus:scroll-auto'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${gentyRegular.variable}  antialiased`}>
+				className={`${geistSans.variable} ${geistMono.variable} ${gentyRegular.variable} text-white  antialiased`}>
 				<Navbar />
 				{children}
 				<Footer />
