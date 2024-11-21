@@ -1,0 +1,15 @@
+export const LINKS = {
+	home: { href: '/home', title: 'Home' },
+	about: { href: '/about', title: 'about' },
+	tokenomics: { href: '/tokenomics', title: 'tokenomics' },
+	roadmap: { href: '/roadmap', title: 'roadmap' },
+	howToBuy: { href: '/how-to-buy', title: 'how to buy' },
+	chart: { href: '/chart', title: 'chart' },
+	buyNow: { href: 'https://app.uniswap.org/swap', title: 'Buy Now' },
+	x: { href: '/x', title: 'X' },
+	telegram: { href: '/telegram', title: 'Telegram' },
+	uniswap: { href: '/uniswap', title: 'Uniswap' },
+	cms: { href: '/cms', title: 'cms' },
+	cc: { href: '/cc', title: 'cc' },
+	dextools: { href: '/dextools', title: 'dextools' },
+};
