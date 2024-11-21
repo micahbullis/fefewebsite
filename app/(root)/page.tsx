@@ -315,7 +315,7 @@ export default function Home() {
 							</AccordionItem>
 						))}
 					</Accordion>
-					<div className='flex items-start w-[300]'>
+					<div className='flex items-start w-[300px]'>
 						<Image
 							className='w-[500px] max-w-full'
 							src={'/bull.svg'}
