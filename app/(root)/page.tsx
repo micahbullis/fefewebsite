@@ -319,7 +319,7 @@ export default function Home() {
 						<Image
 							className='w-[500px] max-w-full'
 							src={'/bull.svg'}
-							alt='hero-image'
+							alt='bull image'
 							width={350}
 							height={350}
 						/>
