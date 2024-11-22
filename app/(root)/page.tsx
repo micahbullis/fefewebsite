@@ -315,11 +315,11 @@ export default function Home() {
 							</AccordionItem>
 						))}
 					</Accordion>
-					<div className='flex items-start w-[300px]'>
+					<div className='flex items-start'>
 						<Image
-							className='w-[500px] max-w-full'
-							src={'/bull.png'}
-							alt='bull image'
+							className='w-[300px] max-w-full'
+							src={'/Bull.png'}
+							alt='bull-image'
 							width={350}
 							height={350}
 						/>
