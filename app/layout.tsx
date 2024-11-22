@@ -4,6 +4,9 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Quicksand } from 'next/font/google';
+import { Badge } from '@/components/ui/badge';
+import { ChevronUp } from 'lucide-react';
+import Link from 'next/link';
 
 const quickSand = Quicksand({
 	subsets: ['latin'],
@@ -37,10 +40,19 @@ export default function RootLayout({
 			lang='en'
 			className='scroll-smooth'>
 			<body
-				className={`${quickSand.className} ${gentyRegular.variable} text-white  antialiased`}>
+				className={`relative ${quickSand.className} ${gentyRegular.variable} text-white  antialiased`}>
 				<Navbar />
 				{children}
 				<Footer />
+				<Link
+					href={'/#nav'}
+					className='sticky bottom-8'>
+					<Badge
+						variant={'default'}
+						className='flex items-center justify-center  w-11 h-11 p-2 rounded-full'>
+						<ChevronUp />
+					</Badge>
+				</Link>
 			</body>
 		</html>
 	);
