@@ -14,42 +14,54 @@ import { Button } from './ui/button';
 import { CrossIcon, Menu } from 'lucide-react';
 import { LINKS } from '@/lib/links';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
 	return (
 		<nav
 			id='nav'
-			className=''>
-			<ul className='hidden md:flex items-center gap-4 text-lg'>
-				<li>
-					<Link href={LINKS.home.href}>{LINKS.home.title}</Link>
-				</li>
-				<li>
-					<Link href={LINKS.about.href}>{LINKS.about.title}</Link>
-				</li>
-				<li>
-					<Link href={LINKS.tokenomics.href}>
-						{LINKS.tokenomics.title}
-					</Link>
-				</li>
-				<li>
-					<Link href={LINKS.roadmap.href}>{LINKS.roadmap.title}</Link>
-				</li>
-				<li>
-					<Link href={LINKS.howToBuy.href}>
-						{LINKS.howToBuy.title}
-					</Link>
-				</li>
-				<li>
-					<Link
-						target='_blank'
-						href={LINKS.chart.href}>
-						{LINKS.chart.title}
-					</Link>
-				</li>
-				<li className='ml-auto'>
+			className=' font-semibold'>
+			<ul className='hidden lg:flex items-center justify-between gap-4 text-2xl'>
+				<Image
+					className='w-[200px] max-w-full'
+					src={'/fefebrandicon.png'}
+					alt='fefe brand icon'
+					width={512}
+					height={512}
+				/>
+				<div className='flex items-center justify-center gap-4'>
+					<li>
+						<Link href={LINKS.home.href}>{LINKS.home.title}</Link>
+					</li>
+					<li>
+						<Link href={LINKS.about.href}>{LINKS.about.title}</Link>
+					</li>
+					<li>
+						<Link href={LINKS.tokenomics.href}>
+							{LINKS.tokenomics.title}
+						</Link>
+					</li>
+					<li>
+						<Link href={LINKS.roadmap.href}>
+							{LINKS.roadmap.title}
+						</Link>
+					</li>
+					<li>
+						<Link href={LINKS.howToBuy.href}>
+							{LINKS.howToBuy.title}
+						</Link>
+					</li>
+					<li>
+						<Link
+							target='_blank'
+							href={LINKS.chart.href}>
+							{LINKS.chart.title}
+						</Link>
+					</li>
+				</div>
+				<li className='ml-auto1'>
 					<Button
-						className='text-lg py-6 px-8 rounded-xl hover:bg-accent/70'
+						className='text-2xl font-semibold py-6 px-8 rounded-xl hover:bg-accent/70'
 						asChild
 						variant={'outline'}>
 						<Link href={LINKS.buyNow.href}>{LINKS.buyNow.title}</Link>
@@ -57,7 +69,14 @@ export default function Navbar() {
 				</li>
 			</ul>
 			<Drawer>
-				<DrawerTrigger className='md:hidden w-full'>
+				<DrawerTrigger className='flex items-center justify-between lg:hidden w-full '>
+					<Image
+						className='w-[200px] max-w-full'
+						src={'/fefebrandicon.png'}
+						alt='fefe brand icon'
+						width={512}
+						height={512}
+					/>
 					<span className='flex justify-end'>
 						<Menu size={30} />
 					</span>
@@ -65,19 +84,20 @@ export default function Navbar() {
 				<DrawerContent className='max-h-[50vh]'>
 					<DrawerHeader>
 						<DrawerTitle>
-							<span className='flex items-center justify-between'>
-								<span>HOPPY 🙄</span>
-								<DrawerClose asChild>
-									<span>
-										<CrossIcon className='text-2xl text-red-600 fill-red-600 rotate-45' />
-									</span>
-								</DrawerClose>
+							<span className='flex items-center justify-center'>
+								<Image
+									className='w-[200px] max-w-full'
+									src={'/fefebrandicon.png'}
+									alt='fefe brand icon'
+									width={512}
+									height={512}
+								/>
 							</span>
 						</DrawerTitle>
 						<DrawerDescription
 							asChild
-							className='font-normal text-lg text-foreground max-h-[50vh] overflow-y-scroll'>
-							<ul className='flex flex-col gap-4 text-lg text-center'>
+							className='font-semibold text-lg text-white max-h-[50vh] overflow-y-scroll'>
+							<ul className='flex flex-col gap-3 mt-4 text-lg text-center'>
 								<li>
 									<Link href={LINKS.home.href}>
 										{LINKS.home.title}

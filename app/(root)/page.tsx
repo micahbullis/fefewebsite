@@ -23,7 +23,7 @@ export default function Home() {
 				id='hero'
 				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex gap-y-8'>
-					<div className='flex items-start justify-center w-full'>
+					<div className='flex items-end justify-center w-full'>
 						<Image
 							className='w-[500px] max-w-full'
 							src={'/drink_smoke.png'}
@@ -41,7 +41,7 @@ export default function Home() {
 							has come for Hoppy to show his greatness.
 						</p>
 						<div className='flex flex-wrap justify-center gap-3'>
-							<Link href={LINKS.x}>
+							<Link href={LINKS.x.href}>
 								<Image
 									src={'/x.svg'}
 									alt='x link'
@@ -49,7 +49,7 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.x}>
+							<Link href={LINKS.telegram.href}>
 								<Image
 									src={'/telegram.svg'}
 									alt='x link'
@@ -57,7 +57,7 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.x}>
+							<Link href={LINKS.uniswap.href}>
 								<Image
 									src={'/uniswap.svg'}
 									alt='x link'
@@ -65,7 +65,7 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.x}>
+							<Link href={LINKS.cmc.href}>
 								<Image
 									src={'/cmc.svg'}
 									alt='x link'
@@ -73,7 +73,7 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.x}>
+							<Link href={LINKS.cc.href}>
 								<Image
 									src={'/cc.svg'}
 									alt='x link'
@@ -81,7 +81,7 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.x}>
+							<Link href={LINKS.dextools.href}>
 								<Image
 									src={'/dextools.svg'}
 									alt='x link'
@@ -162,6 +162,18 @@ export default function Home() {
 								</Button>
 							</div>
 						</div>
+						<Link
+							href={LINKS.etherscan.href}
+							className='flex items-center flex-wrap justify-center gap-4 mb-6'>
+							<Image
+								className='w-7 max-w-full'
+								src={'/etherscanicon.png'}
+								alt='etherscan contract icon'
+								width={90}
+								height={90}
+							/>
+							<span>{LINKS.etherscan.title}</span>
+						</Link>
 					</div>
 				</div>
 				<span className='absolute w-full left-0'>
@@ -183,9 +195,16 @@ export default function Home() {
 						/>
 					</div>
 					<div className='flex flex-col items-center justify-center w-full -order-1 text-center gap-8'>
-						<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
+						{/* <h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 							About
-						</h3>
+						</h3> */}
+						<Image
+							className='w-[250px] max-w-full'
+							alt='about title image'
+							src={'/about.webp'}
+							width={150}
+							height={150}
+						/>
 						<p className='text-2xl max-w-[60ch]'>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Ipsa, necessitatibus repellat voluptatibus iste
@@ -218,9 +237,16 @@ export default function Home() {
 					</div>
 					<div className='flex flex-col items-center justify-center w-full max-lg:-order-1 text-center gap-8'>
 						<div className='flex flex-col w-fit bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
-							<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
+							{/* <h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 								Tokenomics
-							</h3>
+							</h3> */}
+							<Image
+								className='mx-auto w-[500px] max-w-full'
+								src={'/tokenomics.webp'}
+								alt='hero-image'
+								width={350}
+								height={350}
+							/>
 							<p className='text-xl max-w-[60ch]'>
 								Lorem ipsum dolor sit amet consectetur, adipisicing
 								elit. Ipsa, necessitatibus repellat voluptatibus iste
@@ -253,9 +279,16 @@ export default function Home() {
 						/>
 					</div>
 					<div className='flex flex-col items-center justify-center w-full order-1 text-center gap-8'>
-						<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
+						{/* <h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 							Roadmap
-						</h3>
+						</h3> */}
+						<Image
+							className='w-[500px] max-w-full'
+							src={'/roadmap.webp'}
+							alt='hero-image'
+							width={350}
+							height={350}
+						/>
 						<div className='flex flex-col w-fit flex-grow basis-[50%] bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl mb-6'>
 							<p className='text-xl max-w-[60ch]'>
 								Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -288,9 +321,16 @@ export default function Home() {
 				id='how-to-buy'
 				className='w-full max-h-fit my-24 '>
 				<div className='flex flex-col gap-y-8 items-center justify-center'>
-					<h3 className='font-semibold font max-lg:text-5xl text-7xl'>
+					{/* <h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 						How To Buy
-					</h3>
+					</h3> */}
+					<Image
+						className='w-[500px] max-w-full'
+						src={'/howtobuy.webp'}
+						alt='hero-image'
+						width={350}
+						height={350}
+					/>
 					<Accordion
 						className=' p-3 rounded-xl bg-primary/70 max-lg:w-full w-[75%] '
 						type='single'
@@ -325,7 +365,7 @@ export default function Home() {
 						/>
 					</div>
 					<iframe
-						src='https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum'
+						src={LINKS.uniswap.href}
 						height='660px'
 						className='rounded-xl max-lg:w-full w-3/4'
 					/>
@@ -333,12 +373,7 @@ export default function Home() {
 						asChild
 						variant={'outline'}
 						className='mb-6 text-lg py-6 px-8 rounded-xl'>
-						<Link
-							href={
-								'https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum'
-							}>
-							Go to Uniswap
-						</Link>
+						<Link href={LINKS.uniswap.href}>Go to Uniswap</Link>
 					</Button>
 				</div>
 				<span className='absolute w-full left-0'>

@@ -1,15 +1,15 @@
 export const HOW_TO_BUY = [
 	{
 		Q: 'Install MetaMask and Add ETH',
-		A: `Install Metamask Extension and Create an Account at **[metamask.io](metamask.io)**. Make sure your account has some ETH; you can buy ETH directly on MetaMask.`,
+		A: `Install Metamask Extension and Create an Account at **[metamask.io](https://metamask.io/)**. Make sure your account has some ETH; you can buy ETH directly on MetaMask.`,
 	},
 	{
 		Q: 'Connect MetaMask to Uniswap',
-		A: 'Go to Uniswap and Connect MetaMask to **[Uniswap](app.uniswap.org/swap)**: Click Connect, select Token, then paste the contract: 0x6E79B51959CF968d87826592f46f819F92466615',
+		A: 'Go to Uniswap and Connect MetaMask to **[Uniswap](https://app.uniswap.org/swap)**: Click Connect, select Token, then paste the contract: 0x6E79B51959CF968d87826592f46f819F92466615',
 	},
 	{
 		Q: `Swap ETH for HOPPY`,
-		A: `Go to [Uniswap]**(app.uniswap.org/swap)** and Connect MetaMask to [Uniswap](app.uniswap.org/swap): Click Connect, select Token, then paste the contract: 0x6E79B51959CF968d87826592f46f819F92466615`,
+		A: `Go to [Uniswap]**(https://app.uniswap.org/swap)** and Connect MetaMask to [Uniswap](https://app.uniswap.org/swap): Click Connect, select Token, then paste the contract: 0x6E79B51959CF968d87826592f46f819F92466615`,
 	},
 	{
 		Q: `Adjust Slippage and Gas Fees`,
