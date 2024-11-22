@@ -33,9 +33,16 @@ export default function Home() {
 						/>
 					</div>
 					<div className='flex flex-col items-center justify-center w-full max-lg:-order-1 text-center gap-8'>
-						<h1 className='font-genty-regular max-lg:text-5xl text-7xl'>
+						{/* <h1 className='font-genty-regular max-lg:text-5xl text-7xl'>
 							$0xfefe
-						</h1>
+						</h1> */}
+						<Image
+							className='w-[230px] max-w-full'
+							src={'/logo.png'}
+							alt='fefe logo'
+							width={250}
+							height={250}
+						/>
 						<p className='text-2xl'>
 							is on a mission to take over the meme universe. The time
 							has come for Hoppy to show his greatness.
@@ -365,6 +372,7 @@ export default function Home() {
 						/>
 					</div>
 					<iframe
+						autoFocus={false}
 						src={LINKS.uniswap.href}
 						height='660px'
 						className='rounded-xl max-lg:w-full w-3/4'

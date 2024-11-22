@@ -35,7 +35,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className='scroll-smooth focus:scroll-auto'>
+			className='scroll-smooth'>
 			<body
 				className={`${quickSand.className} ${gentyRegular.variable} text-white  antialiased`}>
 				<Navbar />
