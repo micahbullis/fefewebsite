@@ -1,5 +1,3 @@
-import { title } from 'process';
-
 export const LINKS = {
 	home: { href: '/#nav', title: 'Home' },
 	about: { href: '/#about', title: 'about' },

@@ -2,7 +2,6 @@ import React from 'react';
 
 import {
 	Drawer,
-	DrawerClose,
 	DrawerContent,
 	DrawerDescription,
 	DrawerFooter,
@@ -11,7 +10,7 @@ import {
 	DrawerTrigger,
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
-import { CrossIcon, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { LINKS } from '@/lib/links';
 import Link from 'next/link';
 import Image from 'next/image';
