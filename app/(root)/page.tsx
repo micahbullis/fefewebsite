@@ -26,7 +26,7 @@ export default function Home() {
 					<div className='flex items-end justify-center w-full'>
 						<Image
 							className='w-[500px] max-w-full'
-							src={'/drink_smoke.png'}
+							src={'/hero_img.png'}
 							alt='hero-image'
 							width={250}
 							height={250}
@@ -38,14 +38,15 @@ export default function Home() {
 						</h1> */}
 						<Image
 							className='w-[230px] max-w-full'
-							src={'/logo.png'}
+							src={'/fefe_stroke.png'}
 							alt='fefe logo'
 							width={250}
 							height={250}
 						/>
 						<p className='text-2xl'>
-							is on a mission to take over the meme universe. The time
-							has come for Hoppy to show his greatness.
+							Vibes in his own chill universe, unbothered and
+							legendary. No rush, no stress, just pure froggy meme
+							coolness. The world could use more of Fefe energy
 						</p>
 						<div className='flex flex-wrap justify-center gap-3'>
 							<Link href={LINKS.x.href}>
@@ -195,7 +196,7 @@ export default function Home() {
 					<div className='flex items-start justify-center '>
 						<Image
 							className='w-[500px] max-w-full'
-							src={'/wizard.png'}
+							src={'/aboutfefe.png'}
 							alt='hero-image'
 							width={350}
 							height={350}
@@ -213,14 +214,12 @@ export default function Home() {
 							height={150}
 						/>
 						<p className='text-2xl max-w-[60ch]'>
-							Lorem ipsum dolor sit amet consectetur, adipisicing
-							elit. Ipsa, necessitatibus repellat voluptatibus iste
-							architecto tempore facilis amet atque provident veniam
-							cumque quas delectus hic id doloribus fugiat ipsam
-							omnis. Ea. Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Maiores quis ex omnis nulla est vel
-							tempora deleniti quasi eum fuga eveniet harum, quaerat
-							sapiente temporibus iusto! Sit deleniti rerum qui?
+							Fefe is a laid back and carefree frog living in a
+							whimsical world, embodying the playful and surreal
+							essence of the book <i>“Mindviscosity”</i>. Published in
+							2020 by renowned artist Matt Furie. Fefe's relaxed and
+							adventurous spirit captures the heart of this
+							imaginative universe.
 						</p>
 					</div>
 				</div>
@@ -236,14 +235,14 @@ export default function Home() {
 					<div className='flex items-start w-full'>
 						<Image
 							className='w-[500px] max-w-full'
-							src={'/drink_smoke.png'}
+							src={'/tokenomics.png'}
 							alt='hero-image'
 							width={350}
 							height={350}
 						/>
 					</div>
 					<div className='flex flex-col items-center justify-center w-full max-lg:-order-1 text-center gap-8'>
-						<div className='flex flex-col w-fit bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
+						<div className='flex flex-col text-start w-fit bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
 							{/* <h3 className='font-semibold font max-lg:text-5xl text-7xl'>
 								Tokenomics
 							</h3> */}
@@ -255,14 +254,13 @@ export default function Home() {
 								height={350}
 							/>
 							<p className='text-xl max-w-[60ch]'>
-								Lorem ipsum dolor sit amet consectetur, adipisicing
-								elit. Ipsa, necessitatibus repellat voluptatibus iste
-								architecto tempore facilis amet atque provident veniam
-								cumque quas delectus hic id doloribus fugiat ipsam
-								omnis. Ea. Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Maiores quis ex omnis nulla est vel
-								tempora deleniti quasi eum fuga eveniet harum, quaerat
-								sapiente temporibus iusto! Sit deleniti rerum qui?
+								Token Supply: 420,690,000
+							</p>
+							<p className='text-xl max-w-[60ch]'>
+								No Taxes, No Bullshit, it's that chill.
+							</p>
+							<p className='text-xl max-w-[60ch]'>
+								LP Tokens Burned & Contract Ownership Renounced.
 							</p>
 						</div>
 					</div>
@@ -279,7 +277,7 @@ export default function Home() {
 					<div className='flex basis-[25%] items-start w-[200px] order-2'>
 						<Image
 							className='w-full'
-							src={'/drink_smoke.png'}
+							src={'/4.png'}
 							alt='hero-image'
 							width={350}
 							height={350}
@@ -296,23 +294,22 @@ export default function Home() {
 							width={350}
 							height={350}
 						/>
-						<div className='flex flex-col w-fit flex-grow basis-[50%] bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl mb-6'>
+						<div className='flex flex-col justify-start items-start text-start w-fit flex-grow basis-[50%] bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl mb-6'>
 							<p className='text-xl max-w-[60ch]'>
-								Lorem ipsum dolor sit amet consectetur, adipisicing
-								elit. Ipsa, necessitatibus repellat voluptatibus iste
-								architecto tempore facilis amet atque provident veniam
-								cumque quas delectus hic id doloribus fugiat ipsam
-								omnis. Ea. Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Maiores quis ex omnis nulla est vel
-								tempora deleniti quasi eum fuga eveniet harum, quaerat
-								sapiente temporibus iusto! Sit deleniti rerum qui?
+								<strong>Phase 1:</strong> meme, chill
+							</p>
+							<p className='text-xl max-w-[60ch]'>
+								<strong>Phase 2:</strong> vibe, HODL, chill
+							</p>
+							<p className='text-xl max-w-[60ch]'>
+								<strong>Phase 3:</strong> takeover the meme universe
 							</p>
 						</div>
 					</div>
 					<div className='flex basis-[25%] items-start w-[200px]'>
 						<Image
 							className='w-[500px] max-w-full order-2'
-							src={'/drink_smoke.png'}
+							src={'/1.png'}
 							alt='hero-image'
 							width={350}
 							height={350}

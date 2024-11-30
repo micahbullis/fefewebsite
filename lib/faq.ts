@@ -5,18 +5,18 @@ export const HOW_TO_BUY = [
 	},
 	{
 		Q: 'Connect MetaMask to Uniswap',
-		A: 'Go to Uniswap and Connect MetaMask to **[Uniswap](https://app.uniswap.org/swap)**: Click Connect, select Token, then paste the contract: 0x6E79B51959CF968d87826592f46f819F92466615',
+		A: 'Go to Uniswap and Connect MetaMask to **[Uniswap](https://app.uniswap.org/swap)**: Click Connect, select Token, then paste the contract: 0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8',
 	},
 	{
-		Q: `Swap ETH for HOPPY`,
-		A: `Go to [Uniswap]**(https://app.uniswap.org/swap)** and Connect MetaMask to [Uniswap](https://app.uniswap.org/swap): Click Connect, select Token, then paste the contract: 0x6E79B51959CF968d87826592f46f819F92466615`,
+		Q: `Swap ETH for FEFE`,
+		A: `Go to **[Uniswap](https://app.uniswap.org/swap)** and Connect MetaMask to [Uniswap](https://app.uniswap.org/swap): Click Connect, select Token, then paste the contract: 0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8`,
 	},
 	{
 		Q: `Adjust Slippage and Gas Fees`,
 		A: `Use the right amount of **slippage (0.5%-1%)**, if transaction doesn’t work increase gas on MetaMask.`,
 	},
 	{
-		Q: `Import HOPPY Token to MetaMask`,
-		A: 'To see your $HOPPY in your Metamask go into tokens, at the end click on **import tokens**, then click on Custom Token and paste the contract: **0x6E79B51959CF968d87826592f46f819F92466615** and import.',
+		Q: `Import Fefe Token to MetaMask`,
+		A: 'To see your $FEFE in your Metamask go into tokens, at the end click on **import tokens**, then click on Custom Token and paste the contract: **0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8** and import.',
 	},
 ];

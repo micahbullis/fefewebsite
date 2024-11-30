@@ -7,6 +7,7 @@ import { Quicksand } from 'next/font/google';
 import { Badge } from '@/components/ui/badge';
 import { ChevronUp } from 'lucide-react';
 import Link from 'next/link';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const quickSand = Quicksand({
 	subsets: ['latin'],
@@ -44,15 +45,7 @@ export default function RootLayout({
 				<Navbar />
 				{children}
 				<Footer />
-				<Link
-					href={'/#nav'}
-					className='sticky bottom-8'>
-					<Badge
-						variant={'default'}
-						className='flex items-center justify-center  w-11 h-11 p-2 rounded-full'>
-						<ChevronUp />
-					</Badge>
-				</Link>
+				<BackToTopButton link='/#nav' />
 			</body>
 		</html>
 	);

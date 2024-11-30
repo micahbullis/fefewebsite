@@ -11,7 +11,7 @@ export default function Footer() {
 			<div className='flex flex-col justify-center items-center gap-3'>
 				<Image
 					className=''
-					src={'/icon.svg'}
+					src={'/nav_logo.png'}
 					alt='logo'
 					width={160}
 					height={160}
@@ -21,7 +21,7 @@ export default function Footer() {
 				</h3> */}
 				<Image
 					className='w-[230px] max-w-full'
-					src={'/logo.png'}
+					src={'/hero_img.png'}
 					alt='fefe logo'
 					width={250}
 					height={250}
@@ -38,43 +38,12 @@ export default function Footer() {
 					<Link href={LINKS.buyNow.href}>{LINKS.buyNow.title}</Link>
 				</Button>
 			</div>
-			<div className='flex flex-wrap justify-center items-center gap-3'>
-				<Image
-					className=''
-					src={'/crypto.png'}
-					alt='logo'
-					width={160}
-					height={160}
-				/>
-				<Image
-					className=''
-					src={'/trust.png'}
-					alt='logo'
-					width={160}
-					height={160}
-				/>
-				<Image
-					className=''
-					src={'/coinbase.svg'}
-					alt='logo'
-					width={160}
-					height={160}
-				/>
-				<Image
-					className=''
-					src={'/certik.svg'}
-					alt='logo'
-					width={160}
-					height={160}
-				/>
-			</div>
+
 			<div className='flex flex-col items-center justify-center text-center gap-3'>
 				<div className='flex flex-wrap justify-center items-center gap-3 max-w-[55ch]'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Perspiciatis et atque explicabo amet inventore sunt
-					voluptates aliquam ducimus autem necessitatibus tenetur
-					similique ipsa, quidem dolore odio voluptatum numquam.
-					Iusto, assumenda.
+					$FEFE coin has no association with Matt Furie or his
+					creation <i>“Mindviscosity”</i>. This token is simply paying
+					homage to a beloved meme we all love and recognize.
 				</div>
 				<div className='flex flex-wrap justify-center items-center gap-3'>
 					© 2024 by fefe. All rights reserved!

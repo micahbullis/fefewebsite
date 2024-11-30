@@ -22,8 +22,8 @@ export default function Navbar() {
 			className=' font-semibold'>
 			<ul className='hidden lg:flex items-center justify-between gap-4 text-2xl'>
 				<Image
-					className='w-[200px] max-w-full'
-					src={'/fefebrandicon.png'}
+					className='w-[155px] max-w-full'
+					src={'/nav_logo.png'}
 					alt='fefe brand icon'
 					width={512}
 					height={512}
@@ -70,8 +70,8 @@ export default function Navbar() {
 			<Drawer>
 				<DrawerTrigger className='flex items-center justify-between lg:hidden w-full '>
 					<Image
-						className='w-[200px] max-w-full'
-						src={'/fefebrandicon.png'}
+						className='w-[155px] max-w-full'
+						src={'/nav_logo.png'}
 						alt='fefe brand icon'
 						width={512}
 						height={512}
@@ -86,7 +86,7 @@ export default function Navbar() {
 							<span className='flex items-center justify-center'>
 								<Image
 									className='w-[200px] max-w-full'
-									src={'/fefebrandicon.png'}
+									src={'/nav_logo.png'}
 									alt='fefe brand icon'
 									width={512}
 									height={512}

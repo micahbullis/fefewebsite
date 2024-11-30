@@ -25,7 +25,7 @@ export const LINKS = {
 		title: 'dextools',
 	},
 	etherscan: {
-		href: 'https://etherscan.io/token/0x6e79b51959cf968d87826592f46f819f92466615',
-		title: 'Contract: 0x6E79B51959CF968d87826592f46f819F92466615',
+		href: 'https://etherscan.io/token/0xfefe157c9d0ae025213092ff9a5cb56ab492bab8',
+		title: 'Contract: 0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8',
 	},
 };
