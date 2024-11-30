@@ -10,24 +10,14 @@ export default function Footer() {
 		<footer className='flex flex-col items-center justify-center text-center gap-7'>
 			<div className='flex flex-col justify-center items-center gap-3'>
 				<Image
-					className=''
-					src={'/nav_logo.png'}
-					alt='logo'
-					width={160}
-					height={160}
-				/>
-				{/* <h3 className='font-genty-regular max-lg:text-4xl text-6xl'>
-					$0xfefe
-				</h3> */}
-				<Image
 					className='w-[230px] max-w-full'
-					src={'/hero_img.png'}
+					src={'/footerImg.png'}
 					alt='fefe logo'
 					width={250}
 					height={250}
 				/>
 				<Link
-					href={'mailto:abv@gmail.com'}
+					href={'mailto:fefecoinofficial@gmail.com'}
 					className='flex items-center justify-center rounded-full bg-white text-foreground p-2 w-8 h-8'>
 					<Mail />
 				</Link>

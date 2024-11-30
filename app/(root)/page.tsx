@@ -104,67 +104,16 @@ export default function Home() {
 									className='bg-transparent rounded-3xl'
 									asChild
 									variant={'outline'}>
-									<span className='flex items-center justify-center gap-2'>
-										<Link href={'/'}>Link here</Link>
+									<span className='flex items-center justify-between gap-2'>
+										<Link href={'/'}>ascendex</Link>
 										<span>
-											<Star />
-										</span>
-									</span>
-								</Button>
-								<Button
-									className='bg-transparent rounded-3xl'
-									asChild
-									variant={'outline'}>
-									<span className='flex items-center justify-center gap-2'>
-										<Link href={'/'}>Link here</Link>
-										<span>
-											<Star />
-										</span>
-									</span>
-								</Button>
-								<Button
-									className='bg-transparent rounded-3xl'
-									asChild
-									variant={'outline'}>
-									<span className='flex items-center justify-center gap-2'>
-										<Link href={'/'}>Link here</Link>
-										<span>
-											<Star />
-										</span>
-									</span>
-								</Button>
-							</div>
-							<div className='flex flex-wrap justify-center gap-3'>
-								<Button
-									className='bg-transparent rounded-3xl'
-									asChild
-									variant={'outline'}>
-									<span className='flex items-center justify-center gap-2'>
-										<Link href={'/'}>Link here</Link>
-										<span>
-											<Star />
-										</span>
-									</span>
-								</Button>
-								<Button
-									className='bg-transparent rounded-3xl'
-									asChild
-									variant={'outline'}>
-									<span className='flex items-center justify-center gap-2'>
-										<Link href={'/'}>Link here</Link>
-										<span>
-											<Star />
-										</span>
-									</span>
-								</Button>
-								<Button
-									className='bg-transparent rounded-3xl'
-									asChild
-									variant={'outline'}>
-									<span className='flex items-center justify-center gap-2'>
-										<Link href={'/'}>Link here</Link>
-										<span>
-											<Star />
+											<Image
+												className='w-[25px] object-cover rounded-full'
+												src={'/ascendex.png'}
+												alt='ascendex link'
+												width={25}
+												height={25}
+											/>
 										</span>
 									</span>
 								</Button>
