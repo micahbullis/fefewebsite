@@ -28,8 +28,8 @@ export default function Home() {
 							className='w-[500px] max-w-full'
 							src={'/hero_img.png'}
 							alt='hero-image'
-							width={250}
-							height={250}
+							width={1024}
+							height={1024}
 						/>
 					</div>
 					<div className='flex flex-col items-center justify-center w-full max-lg:-order-1 text-center gap-8'>
