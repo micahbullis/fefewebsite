@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 
 import {
 	Drawer,
@@ -10,12 +11,14 @@ import {
 	DrawerTrigger,
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { LINKS } from '@/lib/links';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Navbar() {
+	const [isMenuOpen, setIsMenuOpen] = useState(true);
+
 	return (
 		<nav
 			id='nav'
@@ -67,7 +70,7 @@ export default function Navbar() {
 					</Button>
 				</li>
 			</ul>
-			<Drawer>
+			{/* <Drawer>
 				<DrawerTrigger className='flex items-center justify-between lg:hidden w-full '>
 					<Image
 						className='w-[155px] max-w-full'
@@ -108,9 +111,9 @@ export default function Navbar() {
 									</Link>
 								</li>
 								<li>
-									<Link href={LINKS.tokenomics.href}>
+									<a href={'http://localhost:3000/#tokenomics'}>
 										{LINKS.tokenomics.title}
-									</Link>
+									</a>
 								</li>
 								<li>
 									<Link href={LINKS.roadmap.href}>
@@ -142,7 +145,62 @@ export default function Navbar() {
 					</DrawerHeader>
 					<DrawerFooter></DrawerFooter>
 				</DrawerContent>
-			</Drawer>
+			</Drawer> */}
+
+			{/* mobile navBar */}
+			<div className='flex items-center justify-between lg:hidden w-full'>
+				<Image
+					className='w-[155px] max-w-full'
+					src={'/nav_logo.png'}
+					alt='fefe brand icon'
+					width={512}
+					height={512}
+				/>
+				<Button
+					variant={'outline'}
+					className='flex justify-end'
+					onClick={() => setIsMenuOpen(!isMenuOpen)}>
+					{isMenuOpen ? <X size={30} /> : <Menu size={30} />}
+				</Button>
+			</div>
+			{isMenuOpen && (
+				<ul className='lg:hidden flex flex-col gap-3 mt-4 text-lg text-center'>
+					<li>
+						<Link href={LINKS.home.href}>{LINKS.home.title}</Link>
+					</li>
+					<li>
+						<Link href={LINKS.about.href}>{LINKS.about.title}</Link>
+					</li>
+					<li>
+						<a href={'http://localhost:3000/#tokenomics'}>
+							{LINKS.tokenomics.title}
+						</a>
+					</li>
+					<li>
+						<Link href={LINKS.roadmap.href}>
+							{LINKS.roadmap.title}
+						</Link>
+					</li>
+					<li>
+						<Link href={LINKS.howToBuy.href}>
+							{LINKS.howToBuy.title}
+						</Link>
+					</li>
+					<li>
+						<Link href={LINKS.chart.href}>{LINKS.chart.title}</Link>
+					</li>
+					<li>
+						<Button
+							className='text-lg py-6 px-8 rounded-xl hover:bg-accent/70'
+							asChild
+							variant={'outline'}>
+							<Link href={LINKS.buyNow.href}>
+								{LINKS.buyNow.title}
+							</Link>
+						</Button>
+					</li>
+				</ul>
+			)}
 		</nav>
 	);
 }
