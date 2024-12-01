@@ -12,7 +12,7 @@ export const LINKS = {
 		href: 'https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum',
 		title: 'Buy Now',
 	},
-	x: { href: 'https://x.com/fefeerc', title: 'X' },
+	x: { href: 'https://x.com/fefecoinerc', title: 'X' },
 	telegram: { href: 'https://t.me/FefeCoinERC20', title: 'Telegram' },
 	uniswap: {
 		href: 'https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum',
