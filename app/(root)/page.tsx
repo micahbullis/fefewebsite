@@ -142,15 +142,17 @@ export default function Home() {
 					<Divider />
 				</span>
 			</section>
-			{/* Youtube video player */}
+			{/* Gif player  */}
 			<section
-				id='youtube-video'
+				id='gif player'
 				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex items-center justify-center p-4 gap-y-8'>
-					<iframe
-						className='w-full lg:max-w-[75ch] aspect-video rounded-md shadow-lg'
-						src='https://www.youtube.com/embed/hVqWpFFUcYE?si=0RyhQlrtnMis7QKO'
-						allowFullScreen
+					<Image
+						className='w-full lg:max-w-[75ch] rounded-lg shadow-lg border-2 border-primary'
+						width={800}
+						height={630}
+						alt='gif'
+						src='/gif1.gif'
 					/>
 				</div>
 				<span className='absolute w-full left-0'>
@@ -354,17 +356,15 @@ export default function Home() {
 					<Divider />
 				</span>
 			</section>
-			{/* Gif player  */}
+			{/* Youtube video player */}
 			<section
 				id='youtube-video'
 				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex items-center justify-center p-4 gap-y-8'>
-					<Image
-						className='w-full lg:max-w-[75ch] rounded-lg shadow-lg border-2 border-primary'
-						width={800}
-						height={630}
-						alt='gif'
-						src='/gif1.gif'
+					<iframe
+						className='w-full lg:max-w-[75ch] aspect-video rounded-md shadow-lg'
+						src='https://www.youtube.com/embed/hVqWpFFUcYE?si=0RyhQlrtnMis7QKO'
+						allowFullScreen
 					/>
 				</div>
 				<span className='absolute w-full left-0'>
