@@ -105,7 +105,12 @@ export default function Home() {
 									asChild
 									variant={'outline'}>
 									<span className='flex items-center justify-between gap-2'>
-										<Link href={'/'}>ascendex</Link>
+										<Link
+											href={
+												'https://ascendex.com/en/cashtrade-spottrading/usdt/fefe'
+											}>
+											ascendex
+										</Link>
 										<span>
 											<Image
 												className='w-[25px] object-cover rounded-full'
@@ -137,9 +142,9 @@ export default function Home() {
 					<Divider />
 				</span>
 			</section>
-			{/* video section  */}
+			{/* Youtube video player */}
 			<section
-				id='about'
+				id='youtube-video'
 				className='w-full max-h-fit my-24 '>
 				<div className=' max-lg:flex-col flex items-center justify-center p-4 gap-y-8'>
 					<iframe
@@ -344,6 +349,23 @@ export default function Home() {
 						className='mb-6 text-lg py-6 px-8 rounded-xl'>
 						<Link href={LINKS.uniswap.href}>Go to Uniswap</Link>
 					</Button>
+				</div>
+				<span className='absolute w-full left-0'>
+					<Divider />
+				</span>
+			</section>
+			{/* Gif player  */}
+			<section
+				id='youtube-video'
+				className='w-full max-h-fit my-24 '>
+				<div className=' max-lg:flex-col flex items-center justify-center p-4 gap-y-8'>
+					<Image
+						className='w-full lg:max-w-[75ch] rounded-lg shadow-lg border-2 border-primary'
+						width={800}
+						height={630}
+						alt='gif'
+						src='/gif1.gif'
+					/>
 				</div>
 				<span className='absolute w-full left-0'>
 					<Divider />

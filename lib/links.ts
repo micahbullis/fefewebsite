@@ -27,7 +27,7 @@ export const LINKS = {
 		title: 'cc',
 	},
 	dextools: {
-		href: 'https://www.dextools.io/app/en/token/hoppy?t=1732198223859',
+		href: 'https://www.dextools.io/app/en/token/fefe?t=1733095722893',
 		title: 'dextools',
 	},
 	etherscan: {
