@@ -30,10 +30,11 @@ export default function Footer() {
 			</div>
 
 			<div className='flex flex-col items-center justify-center text-center gap-3'>
-				<div className='flex flex-wrap justify-center items-center gap-3 max-w-[55ch]'>
+				<div className='flex flex-wrap justify-center items-center gap-3 max-w-[75ch]'>
 					$FEFE coin has no association with Matt Furie or his
-					creation <i>“Mindviscosity”</i>. This token is simply paying
-					homage to a beloved meme we all love and recognize.
+					creation <span className='italic'>“Mindviscosity”</span>
+					This token is simply paying homage to a beloved meme we all
+					love and recognize.
 				</div>
 				<div className='flex flex-wrap justify-center items-center gap-3'>
 					© 2024 by fefe. All rights reserved!
