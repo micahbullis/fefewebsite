@@ -5,7 +5,7 @@ export const LINKS = {
 	roadmap: { href: '/#roadmap', title: 'roadmap' },
 	howToBuy: { href: '/#how-to-buy', title: 'how to buy' },
 	chart: {
-		href: 'https://www.dextools.io/app/en/token/hoppy?t=1732198223859',
+		href: 'https://www.dextools.io/app/en/token/fefe?t=1733088596039',
 		title: 'chart',
 	},
 	buyNow: {
