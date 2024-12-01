@@ -137,6 +137,21 @@ export default function Home() {
 					<Divider />
 				</span>
 			</section>
+			{/* video section  */}
+			<section
+				id='about'
+				className='w-full max-h-fit my-24 '>
+				<div className=' max-lg:flex-col flex items-center justify-center p-4 gap-y-8'>
+					<iframe
+						className='w-full lg:max-w-[75ch] aspect-video rounded-md shadow-lg'
+						src='https://www.youtube.com/embed/hVqWpFFUcYE?si=0RyhQlrtnMis7QKO'
+						allowFullScreen
+					/>
+				</div>
+				<span className='absolute w-full left-0'>
+					<Divider />
+				</span>
+			</section>
 			{/* about section  */}
 			<section
 				id='about'
