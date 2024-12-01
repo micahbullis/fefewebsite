@@ -46,7 +46,7 @@ export default function Home() {
 						<p className='text-2xl'>
 							Vibes in his own chill universe, unbothered and
 							legendary. No rush, no stress, just pure froggy meme
-							coolness. The world could use more of Fefe'energy
+							coolness. The world could use more of Fefe's energy
 						</p>
 						<div className='flex flex-wrap justify-center gap-3'>
 							<Link href={LINKS.x.href}>
