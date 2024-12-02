@@ -49,7 +49,9 @@ export default function Home() {
 							coolness. The world could use more of Fefe's energy
 						</p>
 						<div className='flex flex-wrap justify-center gap-3'>
-							<Link href={LINKS.x.href}>
+							<Link
+								target='_blank'
+								href={LINKS.x.href}>
 								<Image
 									src={'/x.svg'}
 									alt='x link'
@@ -57,7 +59,9 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.telegram.href}>
+							<Link
+								target='_blank'
+								href={LINKS.telegram.href}>
 								<Image
 									src={'/telegram.svg'}
 									alt='x link'
@@ -65,7 +69,9 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.uniswap.href}>
+							<Link
+								target='_blank'
+								href={LINKS.uniswap.href}>
 								<Image
 									src={'/uniswap.svg'}
 									alt='x link'
@@ -73,7 +79,9 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.cmc.href}>
+							<Link
+								target='_blank'
+								href={LINKS.cmc.href}>
 								<Image
 									src={'/cmc.svg'}
 									alt='x link'
@@ -81,7 +89,9 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.cc.href}>
+							<Link
+								target='_blank'
+								href={LINKS.cc.href}>
 								<Image
 									src={'/cc.svg'}
 									alt='x link'
@@ -89,7 +99,9 @@ export default function Home() {
 									height={50}
 								/>
 							</Link>
-							<Link href={LINKS.dextools.href}>
+							<Link
+								target='_blank'
+								href={LINKS.dextools.href}>
 								<Image
 									src={'/dextools.svg'}
 									alt='x link'
@@ -106,6 +118,7 @@ export default function Home() {
 									variant={'outline'}>
 									<span className='flex items-center justify-between gap-2'>
 										<Link
+											target='_blank'
 											href={
 												'https://ascendex.com/en/cashtrade-spottrading/usdt/fefe'
 											}>
@@ -125,6 +138,7 @@ export default function Home() {
 							</div>
 						</div>
 						<Link
+						target='_blank'
 							href={LINKS.etherscan.href}
 							className='flex items-center flex-wrap justify-center gap-4 mb-6'>
 							<Image
@@ -349,7 +363,11 @@ export default function Home() {
 						asChild
 						variant={'outline'}
 						className='mb-6 text-lg py-6 px-8 rounded-xl'>
-						<Link href={LINKS.uniswap.href}>Go to Uniswap</Link>
+						<Link
+							target='_blank'
+							href={LINKS.uniswap.href}>
+							Go to Uniswap
+						</Link>
 					</Button>
 				</div>
 				<span className='absolute w-full left-0'>
