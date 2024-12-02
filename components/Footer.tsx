@@ -25,7 +25,7 @@ export default function Footer() {
 					className='text-lg py-6 px-8 rounded-xl hover:bg-accent/70'
 					asChild
 					variant={'outline'}>
-					<Link href={LINKS.buyNow.href}>{LINKS.buyNow.title}</Link>
+					<Link target='_blank' href={LINKS.buyNow.href}>{LINKS.buyNow.title}</Link>
 				</Button>
 			</div>
 
