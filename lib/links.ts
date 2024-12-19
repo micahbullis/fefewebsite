@@ -13,7 +13,7 @@ export const LINKS = {
 		title: 'Buy Now',
 	},
 	x: { href: 'https://x.com/fefecoinerc', title: 'X' },
-	telegram: { href: 'https://t.me/FefeCoinERC20', title: 'Telegram' },
+	telegram: { href: 'https://t.me/fefecoinercTG', title: 'Telegram' },
 	uniswap: {
 		href: 'https://app.uniswap.org/swap?outputCurrency=0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8&chain=ethereum',
 		title: 'Uniswap',
@@ -33,5 +33,9 @@ export const LINKS = {
 	etherscan: {
 		href: 'https://etherscan.io/token/0xfefe157c9d0ae025213092ff9a5cb56ab492bab8',
 		title: 'Contract: 0xfefe157c9d0aE025213092ff9a5cB56ab492BaB8',
+	},
+	instagram: {
+		href: 'https://www.instagram.com/fefecoinerc',
+		title: 'Instagram',
 	},
 };

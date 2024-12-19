@@ -13,6 +13,7 @@ import markdownit from 'markdown-it';
 import { HOW_TO_BUY } from '@/lib/faq';
 import { randomUUID } from 'crypto';
 import { Star } from 'lucide-react';
+import { SocialIcon } from 'react-social-icons';
 const md = markdownit();
 
 export default function Home() {
@@ -135,10 +136,29 @@ export default function Home() {
 										</span>
 									</span>
 								</Button>
+								<Button
+									className='bg-transparent rounded-3xl'
+									asChild
+									variant={'outline'}>
+									<span className='flex items-center justify-between gap-2'>
+										<Link
+											target='_blank'
+											href={LINKS.instagram.href}>
+											{LINKS.instagram.title}
+										</Link>
+										<SocialIcon
+											className='p-0 m-0'
+											target='_blank'
+											url={LINKS.instagram.href}
+											fgColor='white'
+											bgColor='transparent'
+										/>
+									</span>
+								</Button>
 							</div>
 						</div>
 						<Link
-						target='_blank'
+							target='_blank'
 							href={LINKS.etherscan.href}
 							className='flex items-center flex-wrap justify-center gap-4 mb-6'>
 							<Image
