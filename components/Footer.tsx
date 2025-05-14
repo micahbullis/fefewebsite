@@ -6,6 +6,7 @@ import { Button } from './ui/button';
 import { LINKS } from '@/lib/links';
 
 export default function Footer() {
+	
 	return (
 		<footer className='flex flex-col items-center justify-center text-center gap-7'>
 			<div className='flex flex-col justify-center items-center gap-3'>

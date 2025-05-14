@@ -409,6 +409,49 @@ export default function Home() {
 					<Divider />
 				</span>
 			</section>
+			{/* White Paper section */}
+			<section
+				id='youtube-video'
+				className='w-full max-h-fit my-24 '>
+				<div className=' max-lg:flex-col flex gap-y-8'>
+					<div className='flex items-start w-full'>
+						<Image
+							className='mx-auto lg:mx-0 w-[400px] max-w-full'
+							src={'/wizard.png'}
+							alt='hero-image'
+							width={350}
+							height={350}
+						/>
+					</div>
+					<div className='flex flex-col items-center justify-center w-full max-lg:-order-1 text-center gap-8'>
+						<div className='flex flex-col text-start w-fit bg-secondary/70 rounded-3xl p-5 border-2 border-accent shadow-2xl'>
+							<Image
+								className='mx-auto w-[500px] max-w-full'
+								src={'/White Paper.png'}
+								alt='hero-image'
+								width={350}
+								height={350}
+							/>
+							<div className=' max-lg:flex-col flex flex-col items-center justify-center p-4 gap-y-8'>
+								<Button
+									className='text-lg py-6 px-8 rounded-xl hover:bg-accent/70'
+									asChild
+									variant={'outline'}>
+									<Link
+										target='_blank'
+										href='https://drive.google.com/file/d/1-3eOUGRp_rovhjbdH2YIuHW4_PGWIQ37/preview'>
+										View in Fullscreen
+									</Link>
+								</Button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span className='absolute w-full left-0'>
+					<Divider />
+				</span>
+			</section>
+			
 		</main>
 	);
 }
